@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Hotel</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Inter:500,600,700,800&display=swap&_v=20230622174357" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap&_v=20230622174357" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <a href="#" class="header__logo">Luxzury.</a>
+        <nav class="header__menu menu">
+          <div class="menu__body">
+            <ul class="menu__list">
+              <li class="menu__item"><a href="#" class="menu__link" data-goto=".main">Home</a></li>
+              <li class="menu__item"><a href="#" class="menu__link" data-goto=".services">Services</a></li>
+              <li class="menu__item"><a href="#" class="menu__link" data-goto=".facilities">Facilities</a></li>
+              <li class="menu__item"><a href="#" class="menu__link" data-goto=".subscribe">Info</a></li> 
+            </ul>
+          </div>
+          <button class="menu__icon icon-menu">
+            <span class="icon-menu__line"></span>
+          </button>
+        </nav>
+        <a href="#" class="header__button button button_border">Book Now</a>
+      </div>
+    </header>
+    <main class="page">
+      <section class="page__main main">
+        <div class="main__container">
+          <div class="main__content">
+            <div class="main__label"> #1  Best Hotel In-Town</div>
+            <h1 class="main__title main-title">The Most <span>Luxurious Hotel</span> In-Town!</h1>
+            <div class="main__text">
+              <p>Luxzury`s the hotel based in Wakanda, 59th street East Waka. This hotel has been around since 1890 and become one of the best hotels in town.</p>
+            </div>
+            <form action="#" class="main__form form-main">
+              <div class="form-main__item">
+                <label class="form-main__label" for="person">Person</label>
+                <input class="form-main__input" type="text" name="Person" id="person" placeholder="2 Adult - 3 Child">
+              </div>
+              <div class="form-main__item">
+                <label class="form-main__label" for="checkin">Check-in</label>
+                <input class="form-main__input" type="text" name="Check-in" id="checkin" placeholder="16 Jun 9PM">
+              </div>
+              <div class="form-main__item">
+                <label class="form-main__label" for="checkout">Check-out</label>
+                <input class="form-main__input" type="text" name="Check-out" id="checkout" placeholder="18 Jun 9AM">
+              </div>
+              <button class="form-main__button button">CHECK</button>
+            </form>
+          </div>
+          <div class="main__image">
+            <picture><source srcset="img/main/bg.webp" type="image/webp"><img src="img/main/bg.jpeg" alt="hotel"></picture>
+          </div>
+        </div>
+      </section>
+      <section class="page__services services">
+        <div class="services__container">
+          <h2 class="services__title title">We Provide The Best Services for Our Guests</h2>
+          <ul class="services__items">
+            <li class="services__item item-service">
+              <div class="item-service__number">1</div>
+              <h4 class="item-service__title">Hygienic Room</h4>
+              <div class="item-service__text">
+                <p>We do cleaning every time for the convenience of hotel guests, and we have adequate cleaning facilities</p>
+              </div>
+            </li>
+            <li class="services__item item-service">
+              <div class="item-service__number">3</div>
+              <h4 class="item-service__title">High Security</h4>
+              <div class="item-service__text">
+                <p>Security sistem at this hotel is very guaranteed and has a recognized security certificate.</p>
+              </div>
+            </li>
+            <li class="services__item item-service">
+              <div class="item-service__number">2</div>
+              <h4 class="item-service__title">Delicious Food</h4>
+              <div class="item-service__text">
+                <p>We strive to provide the best food from the world's selected chefs, as well as hygienic ingredients.</p>
+              </div>
+            </li>
+            <li class="services__item item-service">
+              <div class="item-service__number">4</div>
+              <h4 class="item-service__title">Quick Service</h4>
+              <div class="item-service__text">
+                <p>We have many qualified employees who are ready to serve you whenever you need.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="page__facilities facilities">
+        <div class="facilities__container">
+          <div class="facilities__content">
+            <h2 class="facilities__title title">Our Facilities</h2>
+            <nav class="facilities__nav nav-facilities">
+              <button class="nav-facilities__button active">Bedroom</button>
+              <button class="nav-facilities__button">Workspace</button>
+              <button class="nav-facilities__button">Meeting Room</button>
+              <button class="nav-facilities__button">Restaurant</button>
+              <button class="nav-facilities__button">Swimming Pool</button>
+              <button class="nav-facilities__button">Coffee Shop</button>
+              <button class="nav-facilities__button">Bedroom</button>
+            </nav>
+          </div>
+          <div class="facilities__sliders">
+            <div class="facilities__slider slider swiper active">
+              <div class="slider__wrapper swiper-wrapper">
+                <div class="slider__slide slide swiper-slide">
+                  <div class="slide__img">
+                    <picture><source srcset="img/facilities/01.webp" type="image/webp"><img src="img/facilities/01.jpeg" alt="room"></picture>
+                  </div>
+                  <div class="slide__name">Tinylux Room</div>
+                  <div class="slide__price">
+                    <div class="slide__prise-number">$2789</div>
+                    <div class="slide__prise-time">per-night</div>
+                  </div>
+                </div>
+                <div class="slider__slide slide swiper-slide">
+                  <div class="slide__img">
+                    <picture><source srcset="img/facilities/02.webp" type="image/webp"><img src="img/facilities/02.jpeg" alt="room"></picture>
+                  </div>
+                  <div class="slide__name">Massvelux Room</div>
+                  <div class="slide__price">
+                    <div class="slide__prise-number">$2789</div>
+                    <div class="slide__prise-time">per-night</div>
+                  </div>
+                </div>
+                <div class="slider__slide slide swiper-slide">
+                  <div class="slide__img">
+                    <picture><source srcset="img/facilities/03.webp" type="image/webp"><img src="img/facilities/03.jpeg" alt="room"></picture>
+                  </div>
+                  <div class="slide__name">Rassvelux Room</div>
+                  <div class="slide__price">
+                    <div class="slide__prise-number">$2789</div>
+                    <div class="slide__prise-time">per-night</div>
+                  </div>
+                </div>
+              </div>
+              <div class="facilities__buttons-arrow arrow__buttons">
+                <div class="facilities__button-prev arrow__button-prev">
+                  <img src="img/main/btn-prev.svg" alt="arrow">
+                </div>
+                <div class="facilities__button-next arrow__button-next">
+                  <img src="img/main/btn-next.svg" alt="arrow">
+                </div>
+              </div>
+            </div>
+            <div class="facilities__slider slider swiper">
+              <div class="slider__wrapper swiper-wrapper">
+                <div class="slider__slide slide swiper-slide">
+                  <div class="slide__img">
+                    <picture><source srcset="img/facilities/02.webp" type="image/webp"><img src="img/facilities/02.jpeg" alt="room"></picture>
+                  </div>
+                  <div class="slide__name">Massvelux Room</div>
+                  <div class="slide__price">
+                    <div class="slide__prise-number">$2789</div>
+                    <div class="slide__prise-time">per-night</div>
+                  </div>
+                </div>
+                <div class="slider__slide slide swiper-slide">
+                  <div class="slide__img">
+                    <picture><source srcset="img/facilities/01.webp" type="image/webp"><img src="img/facilities/01.jpeg" alt="room"></picture>
+                  </div>
+                  <div class="slide__name">Tinylux Room</div>
+                  <div class="slide__price">
+                    <div class="slide__prise-number">$2789</div>
+                    <div class="slide__prise-time">per-night</div>
+                  </div>
+                </div>
+                <div class="slider__slide slide swiper-slide">
+                  <div class="slide__img">
+                    <picture><source srcset="img/facilities/02.webp" type="image/webp"><img src="img/facilities/02.jpeg" alt="room"></picture>
+                  </div>
+                  <div class="slide__name">Massvelux Room</div>
+                  <div class="slide__price">
+                    <div class="slide__prise-number">$2789</div>
+                    <div class="slide__prise-time">per-night</div>
+                  </div>
+                </div>
+                <div class="slider__slide slide swiper-slide">
+                  <div class="slide__img">
+                    <picture><source srcset="img/facilities/03.webp" type="image/webp"><img src="img/facilities/03.jpeg" alt="room"></picture>
+                  </div>
+                  <div class="slide__name">Rassvelux Room</div>
+                  <div class="slide__price">
+                    <div class="slide__prise-number">$2789</div>
+                    <div class="slide__prise-time">per-night</div>
+                  </div>
+                </div>
+                <div class="slider__slide slide swiper-slide">
+                  <div class="slide__img">
+                    <picture><source srcset="img/facilities/02.webp" type="image/webp"><img src="img/facilities/02.jpeg" alt="room"></picture>
+                  </div>
+                  <div class="slide__name">Massvelux Room</div>
+                  <div class="slide__price">
+                    <div class="slide__prise-number">$2789</div>
+                    <div class="slide__prise-time">per-night</div>
+                  </div>
+                </div>
+              </div>
+              <div class="facilities__buttons-arrow arrow__buttons">
+                <div class="facilities__button-prev arrow__button-prev">
+                  <img src="img/main/btn-prev.svg" alt="arrow">
+                </div>
+                <div class="facilities__button-next arrow__button-next">
+                  <img src="img/main/btn-next.svg" alt="arrow">
+                </div>
+              </div>
+            </div>
+            <div class="facilities__slider slider swiper">
+              <div class="slider__wrapper swiper-wrapper">
+                <div class="slider__slide slide swiper-slide">
+                  <div class="slide__img">
+                    <picture><source srcset="img/facilities/01.webp" type="image/webp"><img src="img/facilities/01.jpeg" alt="room"></picture>
+                  </div>
+                  <div class="slide__name">Tinylux Room</div>
+                  <div class="slide__price">
+                    <div class="slide__prise-number">$2789</div>
+                    <div class="slide__prise-time">per-night</div>
+                  </div>
+                </div>
+                <div class="slider__slide slide swiper-slide">
+                  <div class="slide__img">
+                    <picture><source srcset="img/facilities/01.webp" type="image/webp"><img src="img/facilities/01.jpeg" alt="room"></picture>
+                  </div>
+                  <div class="slide__name">Tinylux Room</div>
+                  <div class="slide__price">
+                    <div class="slide__prise-number">$2789</div>
+                    <div class="slide__prise-time">per-night</div>
+                  </div>
+                </div>
+                <div class="slider__slide slide swiper-slide">
+                  <div class="slide__img">
+                    <picture><source srcset="img/facilities/02.webp" type="image/webp"><img src="img/facilities/02.jpeg" alt="room"></picture>
+                  </div>
+                  <div class="slide__name">Massvelux Room</div>
+                  <div class="slide__price">
+                    <div class="slide__prise-number">$2789</div>
+                    <div class="slide__prise-time">per-night</div>
+                  </div>
+                </div>
+                <div class="slider__slide slide swiper-slide">
+                  <div class="slide__img">
+                    <picture><source srcset="img/facilities/03.webp" type="image/webp"><img src="img/facilities/03.jpeg" alt="room"></picture>
+                  </div>
+                  <div class="slide__name">Rassvelux Room</div>
+                  <div class="slide__price">
+                    <div class="slide__prise-number">$2789</div>
+                    <div class="slide__prise-time">per-night</div>
+                  </div>
+                </div>
+              </div>
+              <div class="facilities__buttons-arrow arrow__buttons">
+                <div class="facilities__button-prev arrow__button-prev">
+                  <img src="img/main/btn-prev.svg" alt="arrow">
+                </div>
+                <div class="facilities__button-next arrow__button-next">
+                  <img src="img/main/btn-next.svg" alt="arrow">
+                </div>
+              </div>
+            </div>
+            <div class="facilities__slider slider swiper">
+              <div class="slider__wrapper swiper-wrapper">
+                <div class="slider__slide slide swiper-slide">
+                  <div class="slide__img">
+                    <picture><source srcset="img/facilities/02.webp" type="image/webp"><img src="img/facilities/02.jpeg" alt="room"></picture>
+                  </div>
+                  <div class="slide__name">Massvelux Room</div>
+                  <div class="slide__price">
+                    <div class="slide__prise-number">$2789</div>
+                    <div class="slide__prise-time">per-night</div>
+                  </div>
+                </div>
+                <div class="slider__slide slide swiper-slide">
+                  <div class="slide__img">
+                    <picture><source srcset="img/facilities/01.webp" type="image/webp"><img src="img/facilities/01.jpeg" alt="room"></picture>
+                  </div>
+                  <div class="slide__name">Tinylux Room</div>
+                  <div class="slide__price">
+                    <div class="slide__prise-number">$2789</div>
+                    <div class="slide__prise-time">per-night</div>
+                  </div>
+                </div>
+                <div class="slider__slide slide swiper-slide">
+                  <div class="slide__img">
+                    <picture><source srcset="img/facilities/02.webp" type="image/webp"><img src="img/facilities/02.jpeg" alt="room"></picture>
+                  </div>
+                  <div class="slide__name">Massvelux Room</div>
+                  <div class="slide__price">
+                    <div class="slide__prise-number">$2789</div>
+                    <div class="slide__prise-time">per-night</div>
+                  </div>
+                </div>
+                <div class="slider__slide slide swiper-slide">
+                  <div class="slide__img">
+                    <picture><source srcset="img/facilities/02.webp" type="image/webp"><img src="img/facilities/02.jpeg" alt="room"></picture>
+                  </div>
+                  <div class="slide__name">Massvelux Room</div>
+                  <div class="slide__price">
+                    <div class="slide__prise-number">$2789</div>
+                    <div class="slide__prise-time">per-night</div>
+                  </div>
+                </div>
+                <div class="slider__slide slide swiper-slide">
+                  <div class="slide__img">
+                    <picture><source srcset="img/facilities/03.webp" type="image/webp"><img src="img/facilities/03.jpeg" alt="room"></picture>
+                  </div>
+                  <div class="slide__name">Rassvelux Room</div>
+                  <div class="slide__price">
+                    <div class="slide__prise-number">$2789</div>
+                    <div class="slide__prise-time">per-night</div>
+                  </div>
+                </div>
+              </div>
+              <div class="facilities__buttons-arrow arrow__buttons">
+                <div class="facilities__button-prev arrow__button-prev">
+                  <img src="img/main/btn-prev.svg" alt="arrow">
+                </div>
+                <div class="facilities__button-next arrow__button-next">
+                  <img src="img/main/btn-next.svg" alt="arrow">
+                </div>
+              </div>
+            </div>
+            <div class="facilities__slider slider swiper">
+              <div class="slider__wrapper swiper-wrapper">
+                <div class="slider__slide slide swiper-slide">
+                  <div class="slide__img">
+                    <picture><source srcset="img/facilities/03.webp" type="image/webp"><img src="img/facilities/03.jpeg" alt="room"></picture>
+                  </div>
+                  <div class="slide__name">Rassvelux Room</div>
+                  <div class="slide__price">
+                    <div class="slide__prise-number">$2789</div>
+                    <div class="slide__prise-time">per-night</div>
+                  </div>
+                </div>
+                <div class="slider__slide slide swiper-slide">
+                  <div class="slide__img">
+                    <picture><source srcset="img/facilities/01.webp" type="image/webp"><img src="img/facilities/01.jpeg" alt="room"></picture>
+                  </div>
+                  <div class="slide__name">Tinylux Room</div>
+                  <div class="slide__price">
+                    <div class="slide__prise-number">$2789</div>
+                    <div class="slide__prise-time">per-night</div>
+                  </div>
+                </div>
+                <div class="slider__slide slide swiper-slide">
+                  <div class="slide__img">
+                    <picture><source srcset="img/facilities/03.webp" type="image/webp"><img src="img/facilities/03.jpeg" alt="room"></picture>
+                  </div>
+                  <div class="slide__name">Rassvelux Room</div>
+                  <div class="slide__price">
+                    <div class="slide__prise-number">$2789</div>
+                    <div class="slide__prise-time">per-night</div>
+                  </div>
+                </div>
+                <div class="slider__slide slide swiper-slide">
+                  <div class="slide__img">
+                    <picture><source srcset="img/facilities/02.webp" type="image/webp"><img src="img/facilities/02.jpeg" alt="room"></picture>
+                  </div>
+                  <div class="slide__name">Massvelux Room</div>
+                  <div class="slide__price">
+                    <div class="slide__prise-number">$2789</div>
+                    <div class="slide__prise-time">per-night</div>
+                  </div>
+                </div>
+                <div class="slider__slide slide swiper-slide">
+                  <div class="slide__img">
+                    <picture><source srcset="img/facilities/03.webp" type="image/webp"><img src="img/facilities/03.jpeg" alt="room"></picture>
+                  </div>
+                  <div class="slide__name">Rassvelux Room</div>
+                  <div class="slide__price">
+                    <div class="slide__prise-number">$2789</div>
+                    <div class="slide__prise-time">per-night</div>
+                  </div>
+                </div>
+              </div>
+              <div class="facilities__buttons-arrow arrow__buttons">
+                <div class="facilities__button-prev arrow__button-prev">
+                  <img src="img/main/btn-prev.svg" alt="arrow">
+                </div>
+                <div class="facilities__button-next arrow__button-next">
+                  <img src="img/main/btn-next.svg" alt="arrow">
+                </div>
+              </div>
+            </div>
+            <div class="facilities__slider slider swiper">
+              <div class="slider__wrapper swiper-wrapper">
+                <div class="slider__slide slide swiper-slide">
+                  <div class="slide__img">
+                    <picture><source srcset="img/facilities/01.webp" type="image/webp"><img src="img/facilities/01.jpeg" alt="room"></picture>
+                  </div>
+                  <div class="slide__name">Tinylux Room</div>
+                  <div class="slide__price">
+                    <div class="slide__prise-number">$2789</div>
+                    <div class="slide__prise-time">per-night</div>
+                  </div>
+                </div>
+                <div class="slider__slide slide swiper-slide">
+                  <div class="slide__img">
+                    <picture><source srcset="img/facilities/01.webp" type="image/webp"><img src="img/facilities/01.jpeg" alt="room"></picture>
+                  </div>
+                  <div class="slide__name">Tinylux Room</div>
+                  <div class="slide__price">
+                    <div class="slide__prise-number">$2789</div>
+                    <div class="slide__prise-time">per-night</div>
+                  </div>
+                </div>
+                <div class="slider__slide slide swiper-slide">
+                  <div class="slide__img">
+                    <picture><source srcset="img/facilities/01.webp" type="image/webp"><img src="img/facilities/01.jpeg" alt="room"></picture>
+                  </div>
+                  <div class="slide__name">Tinylux Room</div>
+                  <div class="slide__price">
+                    <div class="slide__prise-number">$2789</div>
+                    <div class="slide__prise-time">per-night</div>
+                  </div>
+                </div>
+                <div class="slider__slide slide swiper-slide">
+                  <div class="slide__img">
+                    <picture><source srcset="img/facilities/02.webp" type="image/webp"><img src="img/facilities/02.jpeg" alt="room"></picture>
+                  </div>
+                  <div class="slide__name">Massvelux Room</div>
+                  <div class="slide__price">
+                    <div class="slide__prise-number">$2789</div>
+                    <div class="slide__prise-time">per-night</div>
+                  </div>
+                </div>
+                <div class="slider__slide slide swiper-slide">
+                  <div class="slide__img">
+                    <picture><source srcset="img/facilities/03.webp" type="image/webp"><img src="img/facilities/03.jpeg" alt="room"></picture>
+                  </div>
+                  <div class="slide__name">Rassvelux Room</div>
+                  <div class="slide__price">
+                    <div class="slide__prise-number">$2789</div>
+                    <div class="slide__prise-time">per-night</div>
+                  </div>
+                </div>
+              </div>
+              <div class="facilities__buttons-arrow arrow__buttons">
+                <div class="facilities__button-prev arrow__button-prev">
+                  <img src="img/main/btn-prev.svg" alt="arrow">
+                </div>
+                <div class="facilities__button-next arrow__button-next">
+                  <img src="img/main/btn-next.svg" alt="arrow">
+                </div>
+              </div>
+            </div>
+            <div class="facilities__slider slider swiper">
+              <div class="slider__wrapper swiper-wrapper">
+                <div class="slider__slide slide swiper-slide">
+                  <div class="slide__img">
+                    <picture><source srcset="img/facilities/03.webp" type="image/webp"><img src="img/facilities/03.jpeg" alt="room"></picture>
+                  </div>
+                  <div class="slide__name">Rassvelux Room</div>
+                  <div class="slide__price">
+                    <div class="slide__prise-number">$2789</div>
+                    <div class="slide__prise-time">per-night</div>
+                  </div>
+                </div>
+                <div class="slider__slide slide swiper-slide">
+                  <div class="slide__img">
+                    <picture><source srcset="img/facilities/01.webp" type="image/webp"><img src="img/facilities/01.jpeg" alt="room"></picture>
+                  </div>
+                  <div class="slide__name">Tinylux Room</div>
+                  <div class="slide__price">
+                    <div class="slide__prise-number">$2789</div>
+                    <div class="slide__prise-time">per-night</div>
+                  </div>
+                </div>
+                <div class="slider__slide slide swiper-slide">
+                  <div class="slide__img">
+                    <picture><source srcset="img/facilities/03.webp" type="image/webp"><img src="img/facilities/03.jpeg" alt="room"></picture>
+                  </div>
+                  <div class="slide__name">Rassvelux Room</div>
+                  <div class="slide__price">
+                    <div class="slide__prise-number">$2789</div>
+                    <div class="slide__prise-time">per-night</div>
+                  </div>
+                </div>
+                <div class="slider__slide slide swiper-slide">
+                  <div class="slide__img">
+                    <picture><source srcset="img/facilities/02.webp" type="image/webp"><img src="img/facilities/02.jpeg" alt="room"></picture>
+                  </div>
+                  <div class="slide__name">Massvelux Room</div>
+                  <div class="slide__price">
+                    <div class="slide__prise-number">$2789</div>
+                    <div class="slide__prise-time">per-night</div>
+                  </div>
+                </div>
+              </div>
+              <div class="facilities__buttons-arrow arrow__buttons">
+                <div class="facilities__button-prev arrow__button-prev">
+                  <img src="img/main/btn-prev.svg" alt="arrow">
+                </div>
+                <div class="facilities__button-next arrow__button-next">
+                  <img src="img/main/btn-next.svg" alt="arrow">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>  
+      <section class="page__reviews reviews">
+        <div class="reviews__container">
+          <h2 class="reviews__title title">See What Our Guest Say</h2>
+          <div class="reviews__slider slider-reviews swiper">
+            <div class="slider-reviews__wrapper swiper-wrapper">
+              <div class="slider-reviews__slide swiper-slide">
+                <div class="slider-reviews__img">
+                  <picture><source srcset="img/reviews/01.webp" type="image/webp"><img src="img/reviews/01.jpeg" alt="autor"></picture>
+                </div>
+                <div class="slider-reviews__content">
+                  <div class="slider-reviews__quotation-mark">“</div>
+                  <div class="slider-reviews__text">This place was incredible, and services of the hotel was great. Thanks!</div>
+                  <div class="slider-reviews__autor-name">Leonardo</div>
+                  <div class="slider-reviews__autor-occupation">Traveller</div>
+                </div>
+              </div>
+              <div class="slider-reviews__slide swiper-slide">
+                <div class="slider-reviews__img">
+                  <picture><source srcset="img/reviews/02.webp" type="image/webp"><img src="img/reviews/02.jpeg" alt="autor"></picture>
+                </div>
+                <div class="slider-reviews__content">
+                  <div class="slider-reviews__quotation-mark">“</div>
+                  <div class="slider-reviews__text">This place was incredible, and services of the hotel was great. Thanks!</div>
+                  <div class="slider-reviews__autor-name">Leonardo</div>
+                  <div class="slider-reviews__autor-occupation">Traveller</div>
+                </div>
+              </div>
+              <div class="slider-reviews__slide swiper-slide">
+                <div class="slider-reviews__img">
+                  <picture><source srcset="img/reviews/03.webp" type="image/webp"><img src="img/reviews/03.jpeg" alt="autor"></picture>
+                </div>
+                <div class="slider-reviews__content">
+                  <div class="slider-reviews__quotation-mark">“</div>
+                  <div class="slider-reviews__text">This place was incredible, and services of the hotel was great. Thanks!</div>
+                  <div class="slider-reviews__autor-name">Leonardo</div>
+                  <div class="slider-reviews__autor-occupation">Traveller</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="reviews__buttons-arrow arrow__buttons">
+            <div class="reviews__button-prev arrow__button-prev">
+              <img src="img/main/btn-prev.svg" alt="arrow">
+            </div>
+            <div class="reviews__button-next arrow__button-next">
+              <img src="img/main/btn-next.svg" alt="arrow">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__subscribe subscribe">
+        <div class="subscribe__container">
+          <h2 class="subscribe__title main-title"><span>Subscribe to<br>Get Special Offer!</span></h2>
+          <div class="subscribe__text">Don`t miss this oportunity! Subscribe now to get the special offer and awesome newsletter!</div>
+          <form action="#" class="subscribe__form">
+            <input class="subscribe__input" type="email" placeholder="Drop your email address">
+            <button class="subscribe__button button">SUBSCRIBE</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__links">
+          <a href="tel:00823424" class="footer__link">00823424</a>
+          <a href="mailto:info@luxzury.id" class="footer__link">info@luxzury.id</a>
+          <a href="www.luxzury.com" class="footer__link">www.luxzury.com</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+</html>
